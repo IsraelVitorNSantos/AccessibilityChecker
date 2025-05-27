@@ -12,20 +12,20 @@ function calcularNota(violations) {
   violations.forEach(v => {
     switch (v.impact) {
       case "critical":
-        penalidade += 1.0;
+        penalidade += 1.0;      // Erros críticos = penalidade total (1.0 ponto cada)
         break;
       case "serious":
-        penalidade += 0.5;
+        penalidade += 0.5;      // Erros sérios = 0.5 ponto cada
         break;
       case "moderate":
-        penalidade += 0.25;
+        penalidade += 0.25;     // Erros moderados = 0.25 ponto cada
         break;
       case "minor":
-        penalidade += 0.1;
+        penalidade += 0.1;      // Erros leves = 0.1 ponto cada (opcional)
         break;
     }
   });
-  const nota = Math.max(0, (10 - penalidade).toFixed(1));
+  const nota = Math.max(0, (10 - penalidade).toFixed(1));      // A nota mínima é 0, máxima é 10
   return nota;
 }
 
