@@ -1,0 +1,41 @@
+/*
+Este é o arquivo principal da extensão. Ele diz ao navegador:
+    O nome da extensão.
+    Qual botão mostrar.
+    Que arquivos serão usados.
+    O que a extensão pode acessar.
+*/
+{
+    "manifest_version": 3, // Define o modelo que o Chrome deve seguir. A versão 3 é a mais nova e segura.
+
+    // Informações básicas:
+    "name": "Accessibility Checker",
+    "version": "1.0",
+    "description": "Verifique problemas de acessibilidade em sites.",
+
+    "permissions": ["activeTab", "scripting", "tabs"], // Diz ao Chrome que a extensão precisa acessar a aba atual, executar códigos em sites e ver quais abas estão abertas.
+
+    "host_permissions": ["<all_urls>"], // Permite que a extensão funcione em qualquer site.
+
+    "background": {
+        "service_worker": "background.js" // Um arquivo que fica rodando por trás da extensão, mesmo quando a janelinha do usuário está fechada. Ele é útil para acompanhar o que está acontecendo.
+    },
+
+    // Diz qual janela (popup) vai aparecer quando clicado o ícone da extensão e qual ícone usar em diferentes tamanhos.
+    "action": {
+        "default_popup": "popup.html", // O arquivo que mostra o botão quando clicada a extensão.
+        "default_icon": {
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        }
+    },
+
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"], // Diz que vai funcionar em qualquer site.
+            "js": ["scripts/axe.min.js", "content.js"] // Quais arquivos serão inseridos nos sites.
+        }
+    ]
+}
