@@ -6,9 +6,9 @@ Extensão Criada: Accessibility Checker
   Objetivo:
     Identificar e reportar problemas de acessibilidade em sites, ajudando desenvolvedores a corrigir elementos que dificultam ou impossibilitam a navegação por pessoas com deficiência.
   
-  Descrição Geral:  
+  Descrição Geral:
+  
     •	Desenvolvimento de extensões: Exige conhecimentos práticos em linguagens como JavaScript, HTML e CSS, além do uso de Interface de programação de aplicações (APIs - Application Programming Interface) específicas de navegadores.
-    
     •	Integração com padrões de acessibilidade: A implementação pode envolver bibliotecas ou APIs que validem elementos de acessibilidade, como Aplicações para a Internet Ricas em Acessibilidade (Accessible Rich Internet   Applications - ARIA).
     •	Desafios algorítmicos: Detectar problemas de acessibilidade (como contraste inadequado ou navegação ineficiente por teclado) demanda soluções que podem incluir processamento de Modelo de Objeto de Documentos (DOM) e   análise de cores.
   
