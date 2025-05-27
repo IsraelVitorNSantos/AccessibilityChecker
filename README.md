@@ -9,10 +9,11 @@ Extensão Criada: Accessibility Checker
   Descrição Geral:
   
     •	Desenvolvimento de extensões: Exige conhecimentos práticos em linguagens como JavaScript, HTML e CSS, além do uso de Interface de programação de aplicações (APIs - Application Programming Interface) específicas de navegadores.
-    •	Integração com padrões de acessibilidade: A implementação pode envolver bibliotecas ou APIs que validem elementos de acessibilidade, como Aplicações para a Internet Ricas em Acessibilidade (Accessible Rich Internet   Applications - ARIA).
-    •	Desafios algorítmicos: Detectar problemas de acessibilidade (como contraste inadequado ou navegação ineficiente por teclado) demanda soluções que podem incluir processamento de Modelo de Objeto de Documentos (DOM) e   análise de cores.
+    •	Integração com padrões de acessibilidade: A implementação pode envolver bibliotecas ou APIs que validem elementos de acessibilidade, como Aplicações para a Internet Ricas em Acessibilidade (Accessible Rich Internet Applications - ARIA).
+    •	Desafios algorítmicos: Detectar problemas de acessibilidade (como contraste inadequado ou navegação ineficiente por teclado) demanda soluções que podem incluir processamento de Modelo de Objeto de Documentos (DOM) e análise de cores.
   
-  Estrutura e Funcionalidades:  
+  Estrutura e Funcionalidades:
+  
     /AccessibilityExtension/ (Pasta principal)
     |___ manifest.json	 (Configuração da extensão: define permissões, arquivos usados, nome da extensão, etc)
     |___ background.js	 (Executa tarefas de plano de fundo: recebe comandos da interface e pode repassar ou escutar mensagens)
@@ -23,13 +24,15 @@ Extensão Criada: Accessibility Checker
         |___ axe.min.js	 (Biblioteca de código aberto da Deque Systems que verifica automaticamente a conformidade com diretrizes de acessibilidade como WCAG 2.1)
     |___icon.png		 (Imagem para o ícone da extensão)
 
-Como Testar:
-  •	Baixe e extraia os arquivos do ZIP.
-  •	Acesse chrome://extensions no Google Chrome.
-  •	Ative o "Modo de Desenvolvedor".
-  •	Clique em "Carregar sem compactação" e selecione a pasta extraída.
+  Como Testar:  
+  
+    •	Baixe e extraia os arquivos do ZIP.
+    •	Acesse chrome://extensions no Google Chrome.
+    •	Ative o "Modo de Desenvolvedor".
+    •	Clique em "Carregar sem compactação" e selecione a pasta extraída.
 
-Usando a Extensão:
-  •	Navegue para um site.
-  •	Clique no ícone da extensão e em "Analisar".
-  •	Verifique o relatório na nova aba aberta.
+  Usando a Extensão:
+  
+    •	Navegue para um site.
+    •	Clique no ícone da extensão e em "Analisar".
+    •	Verifique o relatório na nova aba aberta.
