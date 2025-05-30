@@ -21,13 +21,15 @@ Este é o arquivo principal da extensão. Ele diz ao navegador:
         "service_worker": "background.js" // Um arquivo que fica rodando por trás da extensão, mesmo quando a janelinha do usuário está fechada. Ele é útil para acompanhar o que está acontecendo.
     },
 
+    "icons": {
+    "16": "new_icon1.png",
+    "128": "new_icon1.png"
+  },
     // Diz qual janela (popup) vai aparecer quando clicado o ícone da extensão e qual ícone usar em diferentes tamanhos.
     "action": {
         "default_popup": "popup.html", // O arquivo que mostra o botão quando clicada a extensão.
         "default_icon": {
-            "16": "icon.png",
-            "48": "icon.png",
-            "128": "icon.png"
+            "48": "new_icon1.png"
         }
     },
 
