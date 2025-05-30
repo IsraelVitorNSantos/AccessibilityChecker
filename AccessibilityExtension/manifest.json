@@ -22,14 +22,14 @@ Este é o arquivo principal da extensão. Ele diz ao navegador:
     },
 
     "icons": {
-    "16": "new_icon1.png",
-    "128": "new_icon1.png"
+    "16": "icon.png",
+    "128": "icon.png"
   },
     // Diz qual janela (popup) vai aparecer quando clicado o ícone da extensão e qual ícone usar em diferentes tamanhos.
     "action": {
         "default_popup": "popup.html", // O arquivo que mostra o botão quando clicada a extensão.
         "default_icon": {
-            "48": "new_icon1.png"
+            "48": "icon.png"
         }
     },
 
