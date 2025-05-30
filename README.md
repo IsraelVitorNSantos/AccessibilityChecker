@@ -34,5 +34,5 @@ Extensão Criada: Accessibility Checker
   Usando a Extensão:
   
     •	Navegue para um site.
-    •	Clique no ícone da extensão e em "Analisar".
+    •	Clique no ícone da extensão e em "Verificar Acessibilidade".
     •	Verifique o relatório na nova aba aberta.
