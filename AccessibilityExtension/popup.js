@@ -198,6 +198,7 @@ function translateDescription(id, defaultDescription) {
         "server-side-image-map": "Garante que mapas de imagem do lado do servidor não sejam usados",
         "skip-link": "Garante que todos os links de pular conteúdo tenham um alvo focalizável",
         "svg-img-alt": "Garante que elementos \<svg\> com uma função de imagem tenham um nome acessível",
+        "tabindex": "Garantir que os valores do atributo tabindex não sejam maiores que 0",
         "table-duplicate-name": "Garante que as tabelas não tenham o mesmo resumo e legenda",
         "table-fake-caption": "Garante que as tabelas com legenda não usem funções de apresentação",
         "target-size": "Garante que o alvo de toque tenha um tamanho suficiente",
