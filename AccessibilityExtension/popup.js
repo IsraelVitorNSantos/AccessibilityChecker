@@ -66,17 +66,17 @@ chrome.runtime.onMessage.addListener((message) => {
                             <h2>Problemas Identificados:</h2>
                             ${violations.map(violation => `
                                 <div>
-                                    <h3>${violation.id} - ${violation.help}</h3>
-                                    <p><strong>Descrição:</strong> ${translateDescription(violation.id, violation.description)}</p>
-                                    <p><strong>Impacto:</strong> ${translateImpact(violation.impact)}</p>
-                                    <p><strong>Sugestão de Melhoria:</strong> Consulte 
-                                        <a href="${violation.helpUrl}" target="_blank">este guia</a> 
-                                        para obter mais informações sobre o problema.</p>
-                                    <ul>
-                                        ${violation.nodes.map(node => `
-                                            <li><strong>Elemento afetado:</strong> ${node.target.join(", ")}</li>
-                                        `).join("")}
-                                    </ul>
+                                        <h3><li><strong>${violation.id} - ${violation.help}</strong></li></h3>
+                                        <p><strong>Descrição:</strong> ${translateDescription(violation.id, violation.description)}</p>
+                                        <p><strong>Impacto:</strong> ${translateImpact(violation.impact)}</p>
+                                        <p><strong>Sugestão de Melhoria:</strong> Consulte 
+                                            <a href="${violation.helpUrl}" target="_blank">este guia</a> 
+                                            para obter mais informações sobre o problema.</p>
+                                        <ol>
+                                            ${violation.nodes.map(node => `
+                                                <li><strong>Elemento afetado:</strong> ${node.target.join(", ")}</li>
+                                            `).join("")}
+                                        </ol>
                                 </div>
                             `).join("")}
                         `
