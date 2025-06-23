@@ -21,7 +21,7 @@ function calcularNota(violations) {
         penalidade += 0.25;     // Erros moderados = 0.25 ponto cada
         break;
       case "minor":
-        penalidade += 0.1;      // Erros leves = 0.1 ponto cada (opcional)
+        penalidade += 0.1;      // Erros leves = 0.1 ponto cada
         break;
     }
   });
