@@ -1,8 +1,6 @@
 # AccessibilityChecker
 Extensão para google Chrome que analisa o nível da acessibilidade de sites dando uma nota, além de sugerir melhorias.
 
-Extensão Criada: Accessibility Checker
-
   Objetivo:
     Identificar e reportar problemas de acessibilidade em sites, ajudando desenvolvedores a corrigir elementos que dificultam ou impossibilitam a navegação por pessoas com deficiência.
   
