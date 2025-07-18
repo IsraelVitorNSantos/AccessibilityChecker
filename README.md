@@ -15,16 +15,16 @@ Extensão para google Chrome que analisa o nível da acessibilidade de sites dan
     /AccessibilityExtension/ (Pasta principal)
     |___ manifest.json	 (Configuração da extensão: define permissões, arquivos usados, nome da extensão, etc)
     |___ background.js	 (Executa tarefas de plano de fundo: recebe comandos da interface e pode repassar ou escutar mensagens)
-    |___ content.js	 (Script injetado na página: utiliza a biblioteca axe-core para escanear problemas de acessibilidade)
-    |___ popup.html	 (Interface exibida ao clicar na extensão. Possui um botão para iniciar a análise)
-    |___ popup.js	 (Conecta o botão da interface à execução do content.js e mostra o relatório)
-    |___ scripts		 (Pasta da biblioteca axe-core)
+    |___ content.js	     (Script injetado na página: utiliza a biblioteca axe-core para escanear problemas de acessibilidade)
+    |___ popup.html	     (Interface exibida ao clicar na extensão. Possui um botão para iniciar a análise)
+    |___ popup.js	       (Conecta o botão da interface à execução do content.js, além de mostrar o relatório)
+    |___ scripts		     (Pasta da biblioteca axe-core)
         |___ axe.min.js	 (Biblioteca de código aberto da Deque Systems que verifica automaticamente a conformidade com diretrizes de acessibilidade como WCAG 2.1)
-    |___icon.png		 (Imagem para o ícone da extensão)
+    |___icon.png		     (Imagem para o ícone da extensão)
 
   Como Testar:  
   
-    •	Baixe e extraia os arquivos do ZIP.
+    •	Baixe e extraia os arquivos do ZIP (link para download: https://github.com/IsraelVitorNSantos/AccessibilityChecker).
     •	Acesse chrome://extensions no Google Chrome.
     •	Ative o "Modo de Desenvolvedor".
     •	Clique em "Carregar sem compactação" e selecione a pasta extraída.
