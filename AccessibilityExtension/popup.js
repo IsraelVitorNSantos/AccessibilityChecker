@@ -167,6 +167,7 @@ function translateDescription(id, defaultDescription) {
         "input-image-alt": "Garante que elementos &lt;input type='image'&gt; tenham texto alternativo",
         "label-content-name-mismatch": "Garante que os elementos rotulados por meio de seu conteúdo tenham seu texto visível como parte de seu nome acessível",
         "label-in-name": "Garante que o nome acessível de um campo de formulário contenha o texto de todos os rótulos visíveis",
+        "label-title-only": "que cada elemento do formulário tenha um rótulo visível e não seja rotulado apenas com rótulos ocultos ou com os atributos title ou aria-describedby",
         "label": "Garante que cada elemento de formulário tenha um rótulo",
         "landmark-banner-is-top-level": "Garante que o marco de banner esteja no nível superior da página",
         "landmark-complementary-is-top-level": "Garante que o marco complementar ou 'aside' esteja no nível superior da página",
