@@ -74,7 +74,11 @@ chrome.runtime.onMessage.addListener((message) => {
                                             para obter mais informações sobre o problema.</p>
                                         <ol>
                                             ${violation.nodes.map(node => `
-                                                <li><strong>Elemento afetado:</strong> ${node.target.join(", ")}</li>
+                                                <li>
+                                                    <strong>Elemento afetado:</strong><br>
+                                                    ${node.target.join(", ")}
+                                                    </li><br>
+                                                    HTML: <pre style="background:#f4f4f4;padding:5px;border-radius:4px">${escapeHTML(node.html)}</pre>
                                             `).join("")}
                                         </ol>
                                 </div>
@@ -91,6 +95,14 @@ chrome.runtime.onMessage.addListener((message) => {
         chrome.tabs.create({ url });
     }
 });
+
+function escapeHTML(str) {
+  if (!str) return '';
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
 
 // Função para traduzir os impactos
 function translateImpact(impact) {
